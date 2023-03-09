@@ -12,8 +12,7 @@ const httpServer = app.listen(PORT, err => {
   if (err)  console.log(err)
   console.log(`Escuchando en el puerto ${httpServer.address().port }`)
 })
-
-app.use(express.static(path.join(__dirname, 'public')))
+app.use('/virtual' ,express.static(__dirname+'/public'))
 const io = new Server(httpServer);
 
 app.set('view engine', 'handlebars');

@@ -1,7 +1,6 @@
-const app = require("../app")
+
 const { Router } = require('express')
 const router = Router()
-console.log(app)
 router.get('/chat' ,(request, response) =>{
     const email = request.query;
     if(email == undefined)
