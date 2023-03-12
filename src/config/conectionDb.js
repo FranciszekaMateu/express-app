@@ -1,6 +1,6 @@
 const { connect } = require('mongoose')
 
-const url = 'mongodb+srv://omgmyshot:fran2003@cluster0.haawu7c.mongodb.net/?retryWrites=true&w=majority'
+const url = 'mongodb+srv://omgmyshot:<>@cluster0.haawu7c.mongodb.net/?retryWrites=true&w=majority'
 const dbConnection = async () => {
     return await connect(url, err => {
         if (err) {
